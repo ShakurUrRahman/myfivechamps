@@ -150,14 +150,15 @@
             <h1 class="text-center font-semibold text-2xl mt-4">MY BuDGET</h1>
             <div class="flex justify-between mt-4 mx-14">
                 <h1 class="text-neutral-300">Per Player</h1>
-                <input class="w-16 ml-4 bg-black" type="text">
+                <input id="per-player-field" class="w-16 ml-4 bg-black" type="text">
             </div>
             <div class="mx-auto w-2/4">
-                <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded ">Count</button>
+                <button id="count-btn" class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">Count</button>
             </div>
 
             <div>
-                <h1 class="text-neutral-300 text-center text-xl font-semibold">Player Expenses <span>$00</span></h1>
+                <h1 class="text-neutral-300 text-center text-xl font-semibold">Player Expenses <span
+                        id="player-expenses">$00</span></h1>
             </div>
             <div class="flex justify-between mt-4 mx-14">
                 <h1 class="text-neutral-300">Manager</h1>
@@ -168,7 +169,8 @@
                 <input class="w-16 ml-4 bg-black" type="text">
             </div>
             <div class="mx-auto w-3/4">
-                <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded ">Calculate Total</button>
+                <button id="total-btn" class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">Calculate
+                    Total</button>
             </div>
             <div class="mb-4 ">
                 <h1 class="text-neutral-300 text-center text-xl font-bold">Total <span
@@ -178,6 +180,7 @@
     </main>
 
     <script src="JS/common.js"></script>
+    <script src="JS/calculation.js"></script>
 </body>
 
 </html>
