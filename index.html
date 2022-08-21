@@ -24,6 +24,7 @@
     </header>
 
     <main class="grid grid-cols-4 gap-4 text-white w-11/12 mx-auto my-28">
+
         <section class="bg-slate-700 border-2 border-white rounded-md">
 
             <div class="text-center">
@@ -37,7 +38,8 @@
                     <div>
                         <h1 class="text-sm mt-2">86 Goals || 36 Assists</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
@@ -56,7 +58,8 @@
                     <div>
                         <h1 class="text-sm mt-2">74 Goals || 52 Assists</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
@@ -75,17 +78,52 @@
                     <div>
                         <h1 class="text-sm mt-2">57 Goals || 27 Assists</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
         </section>
 
         <section class="bg-slate-700">
-            <h1 class="text-center font-semibold text-2xl mt-4">MY FiVE</h1>
+            <h1 id="added-player" class="text-center font-semibold text-2xl mt-4">MY FiVE</h1>
             <table>
-                <tr>1</tr>
-                <tr>Lionel Messi</tr>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+
+
+                        <tbody>
+
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+
+                            </tr>
+                           
+                            <tr>
+                                <th>2</th>
+                                <td>Hart Hagerty</td>
+
+                            </tr>
+                            
+                            <tr>
+                                <th>3</th>
+                                <td>Brice Swyre</td>
+
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Brice Swyre</td>
+
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Brice Swyre</td>
+
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
             </table>
         </section>
 
@@ -102,7 +140,8 @@
                     <div>
                         <h1 class="text-sm mt-2">Midfielder</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
@@ -121,7 +160,8 @@
                     <div>
                         <h1 class="text-sm mt-2">Defender</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
@@ -140,7 +180,8 @@
                     <div>
                         <h1 class="text-sm mt-2">Midfielder</h1>
                     </div>
-                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">SELECT</button>
+                    <button class="font-semibold bg-green-400 my-6 px-12 py-2 rounded"
+                        onclick="selectPlayer(this)">SELECT</button>
                 </div>
             </div>
 
@@ -162,18 +203,18 @@
             </div>
             <div class="flex justify-between mt-4 mx-14">
                 <h1 class="text-neutral-300">Manager</h1>
-                <input class="w-16 ml-4 bg-black" type="text">
+                <input id="manager-cost" class="w-16 ml-4 bg-black" type="text">
             </div>
             <div class="flex justify-between mt-4 mx-14">
                 <h1 class="text-neutral-300">Coach</h1>
-                <input class="w-16 ml-4 bg-black" type="text">
+                <input id="coach-cost" class="w-16 ml-4 bg-black" type="text">
             </div>
             <div class="mx-auto w-3/4">
                 <button id="total-btn" class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">Calculate
                     Total</button>
             </div>
             <div class="mb-4 ">
-                <h1 class="text-neutral-300 text-center text-xl font-bold">Total <span
+                <h1 class="text-neutral-300 text-center text-xl font-bold">Total <span id="total-expenses"
                         class="text-orange-600">$00</span></h1>
             </div>
         </section>
@@ -181,6 +222,7 @@
 
     <script src="JS/common.js"></script>
     <script src="JS/calculation.js"></script>
+    <script src="JS/selected-player.js"></script>
 </body>
 
 </html>
