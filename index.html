@@ -25,7 +25,7 @@
 
     <main id="player-section" class="text-white w-11/12 mx-auto my-28">
         <section class="flex">
-            <section>
+            <section class="px-4">
                 <section id="player-cards" class="grid grid-cols-3 gap-4 ">
                     <section class="bg-slate-700 border-2 border-white rounded-md">
 
@@ -150,11 +150,11 @@
             </section>
 
 
-            <section>
-                <section class="bg-slate-700">
-                    <h1 class="text-center font-semibold text-2xl mt-4">MY FiVE <span id="added-player">0</span></h1>
+            <section class="m-8">
+                <section class="bg-slate-700 ">
+                    <h1 class="text-center font-semibold text-2xl pt-8">MY FiVE</h1>
 
-                    <div id="new-added-player" class="list-decimal"></div>
+                    <div id="new-added-player" class="list-decimal text-xl text-center mt-4 p-4"></div>
 
                     <div id="list-contain-player" style="list-style:decimal;"
                         class="text-center mt-12 font-semibold text-xl">
@@ -165,18 +165,19 @@
                 </section>
 
                 <section class="bg-slate-700">
-                    <h1 class="text-center font-semibold text-2xl mt-4">MY BuDGET</h1>
-                    <div class="flex justify-between mt-4 mx-14">
+                    <h1 class="text-center font-semibold text-2xl  pt-8">MY BuDGET</h1>
+                    <div class="flex justify-between mx-12 pt-4">
                         <h1 class="text-neutral-300">Per Player</h1>
                         <input id="per-player-field" class="w-16 ml-4 bg-black" type="text">
                     </div>
                     <div class="mx-auto w-2/4">
-                        <button id="count-btn" class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">Count</button>
+                        <button id="count-btn"
+                            class="font-semibold bg-green-400 my-6 px-8 py-2 w-8/9 rounded hover:bg-yellow-700">Count</button>
                     </div>
 
                     <div>
-                        <h1 class="text-neutral-300 text-center text-xl font-semibold">Player Expenses <span
-                                id="player-expenses">$00</span></h1>
+                        <h1 class="text-neutral-300 text-center text-xl font-semibold">Player Expenses $<span
+                                id="player-expenses">00</span></h1>
                     </div>
                     <div class="flex justify-between mt-4 mx-14">
                         <h1 class="text-neutral-300">Manager</h1>
@@ -187,12 +188,15 @@
                         <input id="coach-cost" class="w-16 ml-4 bg-black" type="text">
                     </div>
                     <div class="mx-auto w-3/4">
-                        <button id="total-btn" class="font-semibold bg-green-400 my-6 px-12 py-2 rounded">Calculate
+                        <button id="total-btn"
+                            class="font-semibold bg-green-400 w-8/9 m-6 px-4 py-2 rounded hover:bg-yellow-700">Calculate
                             Total</button>
                     </div>
                     <div class="mb-4 ">
-                        <h1 class="text-neutral-300 text-center text-xl font-bold">Total <span id="total-expenses"
-                                class="text-orange-600">$00</span></h1>
+                        <h1 class="text-neutral-300 text-center text-xl font-bold pb-4">Total <span
+                                class="text-orange-600">$</span><span id="total-expenses"
+                                class="text-orange-600">00</span>
+                        </h1>
                     </div>
                 </section>
 
