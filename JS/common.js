@@ -1,3 +1,5 @@
+/* Functions for Interactions */
+
 function getInputFieldValue(idName) {
     return parseFloat(document.getElementById(idName).value);
 }

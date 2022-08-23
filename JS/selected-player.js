@@ -1,3 +1,5 @@
+/* JS for Selecting Players */
+
 const playerArray = [];
 document.getElementById('player-cards').addEventListener('click', function (event) {
     if (event.target.classList[0] == 'player') {

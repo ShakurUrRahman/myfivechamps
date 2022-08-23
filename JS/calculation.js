@@ -1,3 +1,5 @@
+/* My Budget Calculation */
+
 document.getElementById('count-btn').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValue('per-player-field');
 
@@ -8,9 +10,10 @@ document.getElementById('count-btn').addEventListener('click', function () {
     const totalPlayerCost = perPlayerCost * playerArray.length;
 
     setResultIntoElement('player-expenses', totalPlayerCost)
-
-
 })
+
+
+/* Total Calculation */
 
 document.getElementById('total-btn').addEventListener('click', function () {
     const managerCost = getInputFieldValue('manager-cost');
