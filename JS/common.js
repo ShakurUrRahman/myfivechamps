@@ -9,4 +9,3 @@ function getStringValue(idName) {
 function setResultIntoElement(idName, result) {
     document.getElementById(idName).innerText = result;
 }
-

@@ -1,8 +1,16 @@
 document.getElementById('count-btn').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValue('per-player-field');
+
+    if (isNaN(perPlayerCost) || perPlayerCost < 0) {
+        alert('Put a valid number')
+        return;
+    }
     const totalPlayerCost = perPlayerCost * playerArray.length;
 
+
+
     setResultIntoElement('player-expenses', totalPlayerCost)
+
 
 })
 
