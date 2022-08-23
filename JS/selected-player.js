@@ -16,7 +16,7 @@ document.getElementById('player-cards').addEventListener('click', function (even
             event.target.classList.add('bg-yellow-700')
         }
         else if (playerArray.length == 5) {
-            alert("Don't add more than five player")
+            alert("Don't add more than five players")
         }
     }
     else {
